@@ -11,7 +11,6 @@ namespace Classes
         private string left;
         private string right;
         private char notch;
-
         public Rotor(string wiring, char notch)
         {
             Keyboard keyboard = new Keyboard();
@@ -19,39 +18,33 @@ namespace Classes
             right = wiring;
             this.notch = notch;
         }
-
         public char GetNotch
         {
             get { return notch; }
-            set { notch = value;}
+            set { notch = value; }
         }
-
         public string GetLeft
         {
             get { return left; }
             set { left = value; }
         }
-
         public string GetRight
         {
             get { return right; }
             set { right = value; }
         }
-
         public int Forward(int signal)
         {
             char letter = right[signal];
             int pos = left.IndexOf(letter);
             return pos;
         }
-
         public int Backward(int signal)
         {
             char letter = left[signal];
             int pos = right.IndexOf(letter);
             return pos;
         }
-
         public void Rotate(int n = 1, bool Forward = true)
         {
             for (int i = 0; i < n; i++)
@@ -68,14 +61,12 @@ namespace Classes
                 }
             }
         }
-
         public void RotateLetter(char letter)
         {
             Keyboard keyboard = new Keyboard();
             int n = keyboard.abc.IndexOf(letter);
             Rotate(n);
         }
-
         public void SetRing(int n, bool Forward)
         {
             Keyboard keyboard = new Keyboard();
@@ -84,5 +75,4 @@ namespace Classes
             notch = keyboard.abc[Math.Abs((nNotch - n) % 26)];
         }
     }
-
 }

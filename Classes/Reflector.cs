@@ -7,23 +7,19 @@ using System.Threading.Tasks;
 
 namespace Classes
 {
-    public class Reflector
+    public class Reflector : Rotor
     {
         private string left;
         private string right;
-
-        public Reflector(string wiring)
+        public Reflector(string wiring) : base(wiring, ' ')
         {
             Keyboard keyboard = new Keyboard();
             left = keyboard.abc;
             right = wiring;
         }
-
         public int Reflect(int signal)
         {
-            char letter = right[signal];
-            int pos = left.IndexOf(letter);
-            return pos;
+            return Forward(signal);
         }
     }
 }
