@@ -41,6 +41,9 @@
             lblReflector = new System.Windows.Forms.Label();
             lblPlugboard = new System.Windows.Forms.Label();
             lblNewMessage = new System.Windows.Forms.Label();
+            label1 = new System.Windows.Forms.Label();
+            label2 = new System.Windows.Forms.Label();
+            label3 = new System.Windows.Forms.Label();
             SuspendLayout();
             // 
             // firstRotorBox
@@ -118,9 +121,9 @@
             // reflectorBox
             // 
             reflectorBox.FormattingEnabled = true;
-            reflectorBox.Location = new System.Drawing.Point(230, 220);
+            reflectorBox.Location = new System.Drawing.Point(230, 240);
             reflectorBox.Name = "reflectorBox";
-            reflectorBox.Size = new System.Drawing.Size(100, 26);
+            reflectorBox.Size = new System.Drawing.Size(180, 26);
             reflectorBox.TabIndex = 17;
             // 
             // plugboardBox
@@ -133,10 +136,10 @@
             // 
             // originalMessageBox
             // 
-            originalMessageBox.Location = new System.Drawing.Point(450, 70);
+            originalMessageBox.Location = new System.Drawing.Point(463, 70);
             originalMessageBox.Multiline = true;
             originalMessageBox.Name = "originalMessageBox";
-            originalMessageBox.Size = new System.Drawing.Size(350, 60);
+            originalMessageBox.Size = new System.Drawing.Size(337, 60);
             originalMessageBox.TabIndex = 19;
             // 
             // newMessageBox
@@ -176,35 +179,35 @@
             // 
             // lblTitle1
             // 
-            lblTitle1.Font = new System.Drawing.Font("Impact", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            lblTitle1.Font = new System.Drawing.Font("Stencil", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             lblTitle1.Location = new System.Drawing.Point(20, 20);
             lblTitle1.Name = "lblTitle1";
-            lblTitle1.Size = new System.Drawing.Size(300, 40);
+            lblTitle1.Size = new System.Drawing.Size(378, 40);
             lblTitle1.TabIndex = 0;
             lblTitle1.Text = "ENIGMA SETTINGS";
             // 
             // lblTitle2
             // 
-            lblTitle2.Font = new System.Drawing.Font("Impact", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            lblTitle2.Font = new System.Drawing.Font("Stencil", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             lblTitle2.Location = new System.Drawing.Point(450, 20);
             lblTitle2.Name = "lblTitle2";
-            lblTitle2.Size = new System.Drawing.Size(300, 40);
+            lblTitle2.Size = new System.Drawing.Size(350, 40);
             lblTitle2.TabIndex = 1;
             lblTitle2.Text = "YOUR MESSAGE";
             // 
             // lblRotors
             // 
-            lblRotors.Font = new System.Drawing.Font("Impact", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            lblRotors.Location = new System.Drawing.Point(20, 80);
+            lblRotors.Font = new System.Drawing.Font("Stencil", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            lblRotors.Location = new System.Drawing.Point(2, 85);
             lblRotors.Name = "lblRotors";
-            lblRotors.Size = new System.Drawing.Size(70, 30);
+            lblRotors.Size = new System.Drawing.Size(88, 30);
             lblRotors.TabIndex = 2;
             lblRotors.Text = "Rotors:";
             // 
             // lblRings
             // 
-            lblRings.Font = new System.Drawing.Font("Impact", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            lblRings.Location = new System.Drawing.Point(20, 130);
+            lblRings.Font = new System.Drawing.Font("Stencil", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            lblRings.Location = new System.Drawing.Point(12, 135);
             lblRings.Name = "lblRings";
             lblRings.Size = new System.Drawing.Size(70, 30);
             lblRings.TabIndex = 3;
@@ -212,45 +215,75 @@
             // 
             // lblRotorChoose
             // 
-            lblRotorChoose.Font = new System.Drawing.Font("Impact", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            lblRotorChoose.Location = new System.Drawing.Point(270, 80);
+            lblRotorChoose.Font = new System.Drawing.Font("Stencil", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            lblRotorChoose.Location = new System.Drawing.Point(230, 70);
             lblRotorChoose.Name = "lblRotorChoose";
-            lblRotorChoose.Size = new System.Drawing.Size(150, 30);
+            lblRotorChoose.Size = new System.Drawing.Size(227, 30);
             lblRotorChoose.TabIndex = 4;
             lblRotorChoose.Text = "ROTOR CHOOSE";
             // 
             // lblReflector
             // 
-            lblReflector.Font = new System.Drawing.Font("Impact", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            lblReflector.Font = new System.Drawing.Font("Stencil", 19.8000011F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             lblReflector.Location = new System.Drawing.Point(230, 180);
             lblReflector.Name = "lblReflector";
-            lblReflector.Size = new System.Drawing.Size(168, 40);
+            lblReflector.Size = new System.Drawing.Size(214, 40);
             lblReflector.TabIndex = 6;
             lblReflector.Text = "REFLECTOR";
             lblReflector.Click += lblReflector_Click;
             // 
             // lblPlugboard
             // 
-            lblPlugboard.Font = new System.Drawing.Font("Impact", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            lblPlugboard.Location = new System.Drawing.Point(20, 180);
+            lblPlugboard.Font = new System.Drawing.Font("Stencil", 19.8000011F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            lblPlugboard.Location = new System.Drawing.Point(0, 180);
             lblPlugboard.Name = "lblPlugboard";
-            lblPlugboard.Size = new System.Drawing.Size(200, 40);
+            lblPlugboard.Size = new System.Drawing.Size(224, 40);
             lblPlugboard.TabIndex = 5;
             lblPlugboard.Text = "PLUGBOARD";
             // 
             // lblNewMessage
             // 
-            lblNewMessage.Font = new System.Drawing.Font("Impact", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            lblNewMessage.Font = new System.Drawing.Font("Stencil", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             lblNewMessage.Location = new System.Drawing.Point(450, 180);
             lblNewMessage.Name = "lblNewMessage";
             lblNewMessage.Size = new System.Drawing.Size(300, 40);
             lblNewMessage.TabIndex = 7;
             lblNewMessage.Text = "NEW MESSAGE";
             // 
+            // label1
+            // 
+            label1.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label1.Location = new System.Drawing.Point(103, 60);
+            label1.Name = "label1";
+            label1.Size = new System.Drawing.Size(135, 23);
+            label1.TabIndex = 24;
+            label1.Text = "I       II       III";
+            // 
+            // label2
+            // 
+            label2.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label2.Location = new System.Drawing.Point(275, 107);
+            label2.Name = "label2";
+            label2.Size = new System.Drawing.Size(135, 23);
+            label2.TabIndex = 25;
+            label2.Text = "I       II       III";
+            // 
+            // label3
+            // 
+            label3.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label3.Location = new System.Drawing.Point(95, 109);
+            label3.Name = "label3";
+            label3.Size = new System.Drawing.Size(135, 23);
+            label3.TabIndex = 26;
+            label3.Text = "I       II       III";
+            // 
             // Enigma
             // 
             BackColor = System.Drawing.Color.WhiteSmoke;
             ClientSize = new System.Drawing.Size(850, 350);
+            Controls.Add(label3);
+            Controls.Add(label2);
+            Controls.Add(label1);
             Controls.Add(lblTitle1);
             Controls.Add(lblTitle2);
             Controls.Add(lblRotors);
@@ -308,5 +341,8 @@
         private System.Windows.Forms.Label lblReflector;
         private System.Windows.Forms.Label lblPlugboard;
         private System.Windows.Forms.Label lblNewMessage;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }
